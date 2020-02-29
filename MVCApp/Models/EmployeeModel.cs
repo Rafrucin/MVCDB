@@ -33,7 +33,7 @@ namespace MVCApp.Models
         [Display(Name = "Password")]
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "Please entre your password")]
-        [StringLength(100, MinimumLength =10, ErrorMessage ="Password must be 10-100 characters")]
+        [StringLength(100, MinimumLength =3, ErrorMessage ="Password must be 10-100 characters")]
         public string Password { get; set; }
 
         [Display(Name = "Confirm Password")]
